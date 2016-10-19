@@ -47,26 +47,16 @@ public class DetailsActivity extends AppCompatActivity {
     public static final String SPICIES = "pokeList";
 
 
-    @Bind(R.id.toolbar)
-    Toolbar toolbar;
-    @Bind(R.id.grid)
-    GridLayout gridView;
-    @Bind(R.id.name)
-    TextView name;
-    @Bind(R.id.height)
-    TextView height;
-    @Bind(R.id.ivSprite)
-    ImageView ivSprite;
-    @Bind(R.id.rlLoading)
-    RelativeLayout rlLoading;
-    @Bind(R.id.sliding_tabs)
-    TabLayout tabLayout;
-    @Bind(R.id.viewpager)
-    ViewPager viewPager;
-    @Bind(R.id.species)
-    TextView species;
-    @Bind(R.id.fabSpecies)
-    RelativeLayout fabSpecies;
+    @Bind(R.id.toolbar) Toolbar toolbar;
+    @Bind(R.id.grid) GridLayout gridView;
+    @Bind(R.id.name) TextView name;
+    @Bind(R.id.height) TextView height;
+    @Bind(R.id.ivSprite) ImageView ivSprite;
+    @Bind(R.id.rlLoading) RelativeLayout rlLoading;
+    @Bind(R.id.sliding_tabs) TabLayout tabLayout;
+    @Bind(R.id.viewpager) ViewPager viewPager;
+    @Bind(R.id.species) TextView species;
+    @Bind(R.id.fabSpecies) RelativeLayout fabSpecies;
     @Bind(R.id.fab)
     FloatingActionButton fab;
     //  @Bind(R.color.colorPrimaryDark) int colorPrimaryDark;
