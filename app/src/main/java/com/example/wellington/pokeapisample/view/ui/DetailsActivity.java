@@ -16,6 +16,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.GridLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -122,7 +123,7 @@ public class DetailsActivity extends AppCompatActivity {
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
 
-        RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) fabSpecies.getLayoutParams();
+        FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) fabSpecies.getLayoutParams();
         params.height = metrics.heightPixels/2;
         fabSpecies.setLayoutParams(params);
 

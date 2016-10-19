@@ -16,8 +16,11 @@ import org.powermock.core.classloader.annotations.PowerMockIgnore;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
+import rx.Scheduler;
 import rx.plugins.RxJavaErrorHandler;
 import rx.plugins.RxJavaPlugins;
+import rx.plugins.RxJavaSchedulersHook;
+import rx.schedulers.Schedulers;
 
 /**
  * Created by Wellington on 18/10/2016.
@@ -31,8 +34,7 @@ class BaseUnitTest  {
     @Mock
     Context fakeContext;
 
-    @Rule
-    public final RxSchedulersOverrideRule mRxSchedulersOverrideRule = new RxSchedulersOverrideRule();
+    @Rule public final RxSchedulersOverrideRule mRxSchedulersOverrideRule = new RxSchedulersOverrideRule();
 
     @Before
     public void setup(){

@@ -7,6 +7,7 @@ import com.example.wellington.pokeapisample.repository.listener.MainListener;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertFalse;
+import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.assertTrue;
 
 /**
@@ -22,6 +23,7 @@ public class MainPresenterUnitTest extends BaseUnitTest{
     @Test
     public void mainPresenter_notNull() throws Exception{
         MainPresenter mainPresenter = new MainPresenter();
+        assertNotNull(true);
         mainPresenter.loadPokemonList(0, new MainListener() {
             @Override
             public void onPokemonListLoad(PokemonList pokemonList) {
