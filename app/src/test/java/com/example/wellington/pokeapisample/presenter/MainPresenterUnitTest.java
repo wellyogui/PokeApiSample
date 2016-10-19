@@ -17,6 +17,8 @@ public class MainPresenterUnitTest extends BaseUnitTest{
 
     private final String TAG = MainPresenterUnitTest.class.getSimpleName();
 
+
+
     @Test
     public void mainPresenter_notNull() throws Exception{
         MainPresenter mainPresenter = new MainPresenter();
